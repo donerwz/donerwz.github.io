@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wentao's ict portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    <main class="content">
+        <img src="images/ppro.svg.png" class="pageIcon">
+        <h1>Film & Premier Pro</h1>
+        <h3>wow such <em>cool</em> film</h3>
+        <h1>there was supposed to be a video here but i couldn't fit it due to the large file size. :(</h1>
+        <p>This is one of three videos that I had to make for this unit. The other ones include a match-cut assignment where we had to have a bunch of clips of different people running and then stich them together like one whole continous clip. While the second one was the final assignment for this unit, where we had several options on what to do. I decided to make a movie trailer and chose the F1 movie for it.</p>
+        <h2>Shot List</h2>
+        <p>This was the shot list our group used to organize everything with a few cut out during post due to time.</p>
+        <table border="1">
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>Location</th>
+            <th>Shot Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>City/Exterior</td>
+            <td>Static wide</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>SkyTrain Platform</td>
+            <td>Wide</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>SkyTrain Interior</td>
+            <td>Handheld medium</td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>SkyTrain Doors</td>
+            <td>Close-up</td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>SkyTrain Window</td>
+            <td>POV</td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>Waterfront Station</td>
+            <td>Medium</td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>Gastown</td>
+            <td>Medium</td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>Gastown</td>
+            <td>Close-up</td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td>Nemesis (Inside)</td>
+            <td>Wide</td>
+            </tr>
+            <tr>
+            <td>10</td>
+            <td>Nemesis (Inside)</td>
+            <td>Close-up</td>
+            </tr>
+            <tr>
+            <td>11</td>
+            <td>Nemesis (Inside)</td>
+            <td>Close-up</td>
+            </tr>
+            <tr>
+            <td>12</td>
+            <td>Nemesis (Exterior)</td>
+            <td>Wide</td>
+            </tr>
+            <tr>
+            <td>13</td>
+            <td>Sidewalk</td>
+            <td>Medium</td>
+            </tr>
+            <tr>
+            <td>14</td>
+            <td>Sidewalk</td>
+            <td>Close-up</td>
+            </tr>
+            <tr>
+            <td>15</td>
+            <td>Canada Place</td>
+            <td>Wide</td>
+            </tr>
+            <tr>
+            <td>16</td>
+            <td>Totem Poles</td>
+            <td>Low to high angle - wide</td>
+            </tr>
+            <tr>
+            <td>17</td>
+            <td>Kitsilano Beach</td>
+            <td>Wide</td>
+            </tr>
+        </tbody>
+        </table>
+    </main>
+</body>
+</html>

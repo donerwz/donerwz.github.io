@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wentao's ict portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="anim">
+    <div id="navbar-container"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+    <main class="content">
+        <div>
+        <img src="images/animate.svg.png" class="pageIcon">
+        <h1>Animation</h1>
+        <h3>uhh moving drawings yippee</h3>
+        </div>
+        <video muted autoplay loop width="100%">
+        <source src="images/tutorial_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <p>One of our first assignments, we learned the basics of Adobe Animate. Figuring out how to use motion tweens and creating objects. Following a YouTube tutorial to learn and create this.</p>
+        <video muted autoplay loop width="100%">
+        <source src="images/rigged anim.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <p>One of the other ones included learning how to create rigs in Adobe Animate, where we followed another tutorial. Implementing motion tweens with rigs and learning parenting layers.</p>
+        <video muted autoplay loop width="100%">
+        <source src="images/the guy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <p>This was the final assignment of the unit where we had creative freedom to make anything that was 3 seconds or longer. I decided to create this, which after a bunch of ideas and iterations landed on this.</p>
+    </main>
+</body>
+</html>

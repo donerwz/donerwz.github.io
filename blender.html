@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wentao's ict portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    <main class="content">
+        <img src="images/blender.svg.png" class="pageIcon">
+        <h1>welcome to the blender page :)</h1>
+        <h3>have a look around this cool <em>gallery</em></h3>
+        <img src="images/finished donut.png" class="galImages">
+        <p>1. <br> our first blender assignment, the classic donut.</p>
+        <img src="images/burgers.png" class="galImages">
+        <p>2. <br> one of two of the blender section of my finals project.</p>
+        <img src="images/mushrooms.png" class="galImages">
+        <p>3. <br> the second blender exercise from my finals.</p>
+    </main>
+</body>
+</html>

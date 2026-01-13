@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wentao's ict portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    <main class="content">
+        <img src="images/ps.svg.png" class="pageIcon">
+        <h1>Photoshop</h1>
+        <h3>come look at my creations</h3>
+        <img src="images/thewoman.png" class="galImages">
+        <p>Inspired by surrealist art, I designed this creation using a tutorial and tweaking it to make it my own.</p>
+        <div class="galColm">
+            <img src="images/pear poster.png" class="poster">
+            <img src="images/cover.png" class="poster">
+        </div>
+        <p>this one was made for an in-class assignment but the one on the right is one I made for another class's project which im using here as filler.</p>
+    </main>
+</body>
+</html>
